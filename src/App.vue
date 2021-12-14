@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :data='DataHeader'/>
+    <Header :dataMenu='DataHeader'/>
     <Main/>
     <Footer/>
   </div>

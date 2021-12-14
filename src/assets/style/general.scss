@@ -3,6 +3,9 @@
 $pink:#f53c81;
 $azzurro:#4da4dd;
 $viola:#be80a4;
+$seppia:#a07037;
+$maple:#78030d;
+$blue:#0193b0;
 
 
 // pezzi di codice riutilizzabili 
@@ -10,4 +13,25 @@ $viola:#be80a4;
 .container{
   width: 60%;
   margin: 0 auto;
-}
+};
+
+.btn{
+  color: white;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-size: 12px;
+  
+};
+.btn.pink{
+  background-color: $viola;
+};
+.btn.pink:hover{
+  background-color: $pink;
+};
+.btn.blue{
+  background-color: $azzurro;
+};
+.btn.blue:hover{
+  background-color: $blue;
+};

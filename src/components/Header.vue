@@ -3,7 +3,7 @@
     <div class="container">
       <ul class="top">
        
-        <li v-for="(item , index) in data " :key="index">
+        <li v-for="(item , index) in dataMenu " :key="index">
           <a href="#" v-if="item.value!='../assets/img/avada-nightclub-logo.png'"  >{{item.value}}</a>
           <div class="underline" v-if="item.value=='home'"></div>  
           <img src="../assets/img/avada-nightclub-logo.png" v-if="item.value=='../assets/img/avada-nightclub-logo.png'" alt="">
@@ -14,7 +14,7 @@
       <div class="center">
         <img src="../assets/img/avada-nightclub-homepage-image.png" alt="">
         <h2>making memories all night long</h2>
-        <div class="btn">become a vip</div>
+        <div class="btn pink">become a vip</div>
       </div>
       <div class="bottom">
         <img src="../assets/img/avada-nightclub-play-showreel.png" alt="">
@@ -30,7 +30,7 @@
 export default {
   name:'Header',
   props:{
-    data:Array
+    dataMenu:Array
   },
   methods:{
    
@@ -88,6 +88,7 @@ export default {
         margin-top: 60px;
         img{
           width: 100%;
+          min-width: 500px;
           
         };
         h2{
@@ -97,20 +98,12 @@ export default {
           padding: 50px;
           text-align: center;
           width: 100%;
+          min-width: 500px;
         };
         .btn{
-          background-color: $viola;
-          color: white;
-          text-transform: uppercase;
-          padding: 6px 20px;
-          cursor: pointer;
           position: absolute;
           bottom: 0;
           transform: translateY(50%);
-          font-size: 12px;
-        };
-        .btn:hover{
-          background-color: $pink;
         };
       };
       .bottom{
