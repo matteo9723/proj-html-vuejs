@@ -2,7 +2,7 @@
   <div id="app">
     <Header :dataMenu='DataHeader'/>
     <Main/>
-    <Footer/>
+    <Footer :FirstColumnFooter='FirstColumnFooter'/>
   </div>
 </template>
 
@@ -38,7 +38,32 @@ export default {
         {
           value:'contact us'
         }
-      ]
+      ],
+      
+      FirstColumnFooter:[
+           {
+             image:'../assets/img/avada-nightclub-events-6.jpg',
+             title:'DJ Fusion',
+             date:'August 19, 2022 @ 8.00 am'
+           },
+           {
+             image:'../assets/img/avada-nightclub-events-5.jpg',
+             title:'House Nation',
+             date:'August 19, 2022 @ 8.00 am'
+           },
+           {
+             image:'../assets/img/avada-nightclub-events-4.jpg',
+             title:'Jazz Night',
+             date:'August 19, 2022 @ 8.00 am'
+           }
+      ] 
+      
+       
+        
+        
+       
+       
+      
     };
   },
   components: {

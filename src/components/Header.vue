@@ -101,7 +101,7 @@ export default {
           min-width: 500px;
         };
         .btn{
-          position: absolute;
+         position: absolute;
           bottom: 0;
           transform: translateY(50%);
         };
