@@ -39,6 +39,9 @@
        <p>Copyright 2012-2021 | Avada Theme by <span> ThemeFusion</span> | All Rights Reserved | Powered by <span>Wordpress</span></p>
      </div>
    </div>
+   <div class="more">
+    &#8963;
+   </div>
   </div>
 </template>
 
@@ -58,9 +61,11 @@ export default {
     background-size: cover;
     background-position: bottom;
     padding: 30px 0;
+    position: relative;
     .container{
       .footer-top{
         display: flex;
+        margin-bottom: 50px;
 
         .column{
           width: calc(100%/3);
@@ -138,6 +143,30 @@ export default {
           }
         }
       };
+      .footer-bottom{
+        color: gray;
+        font-size: 10px;
+        text-align: center;
+        
+        span{
+          color: $azzurro
+        };
+       
+      };
     };
+    .more{
+          color: white;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          padding-top: 3px;         
+          background-color: rgb(80, 78, 78);
+          position: absolute;
+          right:20px;
+          bottom: 20px;      
+          cursor: pointer; 
+          
+    }
   };
 </style>

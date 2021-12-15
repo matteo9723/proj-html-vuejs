@@ -22,6 +22,19 @@
 
 
     </div>
+    <div class="more">
+      <div class="item">
+        <i class="fas fa-folder"></i>
+        <span>Demos</span>
+      </div>
+      <div class="item">
+        <div class="dollar">
+          <i class="fas fa-dollar-sign"></i>
+          <span>39</span>
+        </div>
+        <span>on sale</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -46,6 +59,7 @@ export default {
     min-height: 100vh;
     background-image: url('../assets/img/avada-nightclub-home-hero.jpg');
     background-size:cover;
+    position: relative;
     .container{
       .top{
       display: flex;
@@ -113,6 +127,44 @@ export default {
           width: 150px;
           margin: 50px 0 20px 0;
           cursor: pointer
+        };
+      };
+    };
+    .more{
+      position: absolute;
+      right:  10px;
+      top: 100px;
+      .item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        span,i{
+          color: #33475B;
+        };
+        span{
+          font-size: 10px
+        };
+        .dollar{
+          position: relative;
+          i,span{
+            color: rgb(42, 180, 42);
+          };
+          span{
+            font-size: 20px
+          };
+          i{
+            font-size: 10px;
+            position: absolute;
+            top: 4px;
+            left: -5px;
+          }
         };
       };
     };

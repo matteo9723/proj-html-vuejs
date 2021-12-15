@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import "@fontsource/roboto-mono";
+import "@fontsource/aileron"
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
@@ -77,7 +77,7 @@ export default {
 
 <style lang="scss" >
   *{
-    font-family: "Roboto Mono";
+    font-family: "Aileron";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
