@@ -4,10 +4,13 @@
       <ul class="top">
        
         <li v-for="(item , index) in dataMenu " :key="index">
-          <a href="#" v-if="item.value!='../assets/img/avada-nightclub-logo.png'"  >{{item.value}}</a>
+          <a href="#" >{{item.value}}</a>
           <div class="underline" v-if="item.value=='home'"></div>  
-          <img src="../assets/img/avada-nightclub-logo.png" v-if="item.value=='../assets/img/avada-nightclub-logo.png'" alt="">
           
+        
+          <img :src="item.image" alt="" >        
+      
+
         </li>
       
       </ul>
@@ -86,10 +89,6 @@ export default {
           position: absolute;
           width: 100%;
           bottom: -10px;
-        };
-        img{
-          width: 250px;
-         
         };
       };
       

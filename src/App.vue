@@ -27,7 +27,7 @@ export default {
           value:'events'
         },
         {
-          value:'../assets/img/avada-nightclub-logo.png'
+          image:require('./assets/img/avada-nightclub-logo.png')
         },
         {
           value:'jobs'
